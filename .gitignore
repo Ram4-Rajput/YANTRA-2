@@ -4,6 +4,14 @@
 __pycache__/
 *.py[cod]
 *.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
 
 # Virtual environments
 venv/
@@ -15,6 +23,7 @@ env/
 # =========================
 .env
 .env.*
+!.env.example
 
 # =========================
 # Audio / generated files
@@ -23,6 +32,14 @@ env/
 *.mp3
 *.ogg
 *.flac
+*.mp4
+*.avi
+*.mov
+*.mkv
+uploads/
+screenshots/
+captures/
+assistant_memory.json
 
 # =========================
 # AI / model files
@@ -38,15 +55,18 @@ models/
 # Logs
 # =========================
 *.log
+logs/
 
 # =========================
 # IDE
 # =========================
 .vscode/
 .idea/
+.python-version
 
 # =========================
 # OS
 # =========================
 .DS_Store
 Thumbs.db
+desktop.ini
